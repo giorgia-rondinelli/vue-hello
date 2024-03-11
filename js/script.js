@@ -6,7 +6,9 @@ createApp({
       countdown: 10,
       stop: 'fine',
       myClass:'red',
-      isRed:true
+      isRed:true,
+      nome: 'ludovico',
+      nuovoSaluto:''
 
     }
   },
@@ -28,6 +30,10 @@ createApp({
   , 
     resetCountdown(){
       this.countdown=10
+
+    },
+    saluto(){
+      this.nuovoSaluto=`ciao ${this.nome}!`
 
     }
 },

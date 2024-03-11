@@ -15,7 +15,12 @@
     <button @click="resetCountdown">Restart</button>
     <h2 :class="isRed ? myClass : ''">ciao</h2>
     <button @click="isRed =!isRed">change color</button>
-    
+    <h2>ciao {{nome}}!</h2>
+    <input type="text" v-model="nome"><br>
+    <hr>
+    <h2>{{nuovoSaluto}}</h2>
+    <button @click="saluto">Genera saluto </button>
+
  
 
 
