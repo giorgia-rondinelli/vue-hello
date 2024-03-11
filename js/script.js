@@ -4,7 +4,9 @@ createApp({
     return{
       messaggio:'ciao!',
       countdown: 10,
-      stop: 'fine'
+      stop: 'fine',
+      myClass:'red',
+      isRed:true
 
     }
   },

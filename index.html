@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app">
     <h1>{{messaggio}}</h1>
-    <h2>{{countdown}}</h2>
+    <h2 ><span :class="countdown===0 ? myClass : ''">{{countdown}}</span></h2>
     <button @click="startCountdown">Start countdown</button>
     <button @click="resetCountdown">Restart</button>
+    <h2 :class="isRed ? myClass : ''">ciao</h2>
+    <button @click="isRed =!isRed">change color</button>
     
  
 
